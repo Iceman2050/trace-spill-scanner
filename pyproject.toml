@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trace-spill-scanner"
+version = "1.0.0"
+description = "Redaction dry-run for GenAI agent observability traces"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+
+[project.scripts]
+trace-spill-scanner = "tracespill.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
